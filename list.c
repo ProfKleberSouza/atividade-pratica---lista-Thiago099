@@ -126,6 +126,7 @@ void edit(list * l,int id,product p)
 		i=i->next;
 	}
 }
+//Uma funcionalidade única e exclusiva, definida por você
 void clear(list * l)
 {
 	node * prev=l->first;
