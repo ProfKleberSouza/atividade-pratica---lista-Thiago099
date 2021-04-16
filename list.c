@@ -133,9 +133,9 @@ void clear(list * l)
 	for(node * i=l->first;;)
 	{
 
-		if(i->next==NULL)break;
 		prev=i;
 		free(prev);
+		if(i->next==NULL)break;
 		i=i->next;
 	}
 	free(l);
