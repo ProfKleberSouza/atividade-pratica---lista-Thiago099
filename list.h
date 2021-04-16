@@ -46,3 +46,5 @@ int count(list * l);
 product remove_by_id(list * l,int id);
 
 void edit(list * l,int id,product p);
+
+void clear(list * l);

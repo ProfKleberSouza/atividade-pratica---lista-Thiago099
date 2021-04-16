@@ -126,4 +126,16 @@ void edit(list * l,int id,product p)
 		i=i->next;
 	}
 }
+void clear(list * l)
+{
+	node * prev=l->first;
+	for(node * i=l->first;;)
+	{
 
+		if(i->next==NULL)break;
+		prev=i;
+		free(prev);
+		i=i->next;
+	}
+	free(l);
+}
